@@ -38,6 +38,7 @@ c) Comparison Operators:
 4)What is List?
 Lists are used to store multiple items in a single variable.
 A list in Python is a collection of elements, which can be of any data type (such as integers, strings, or other objects
+List items are ordered, changeable, and allow duplicate values.
 
 declaring List in python
 my_list = [1, 2, 3, 4, 5]
