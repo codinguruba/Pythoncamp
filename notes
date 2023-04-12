@@ -42,3 +42,10 @@ List items are ordered, changeable, and allow duplicate values.
 
 declaring List in python
 my_list = [1, 2, 3, 4, 5]
+
+5) if else in python?
+In Python, the if-else statement is used to execute a block of code based on a condition. Here is the basic syntax:
+if condition:
+    # code to be executed if the condition is True
+else:
+    # code to be executed if the condition is False
