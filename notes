@@ -14,20 +14,20 @@ Example - str , int, float , bool , list etc.
 -In Python, operators are special symbols that perform arithmetic or logical computations on values or variables. 
 Here are the most commonly used operators in Python:
 
-1)Arithmetic Operators:
+a)Arithmetic Operators:
 
 + (Addition)
 - (Subtraction)
 * (Multiplication)
 / (Division)
 
-2)Assignment Operators:
+b)Assignment Operators:
 = (Simple assignment)
 += (Add and assign)
 -= (Subtract and assign)
 *= (Multiply and assign)
 
-3) Comparison Operators:
+c) Comparison Operators:
 == (Equal to)
 != (Not equal to)
 > (Greater than)
@@ -35,7 +35,7 @@ Here are the most commonly used operators in Python:
 
 
 
-What is List?
+4)What is List?
 Lists are used to store multiple items in a single variable.
 A list in Python is a collection of elements, which can be of any data type (such as integers, strings, or other objects
 
