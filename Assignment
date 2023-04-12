@@ -1,0 +1,18 @@
+Solved Examples:
+
+1) Python program to input a number and check whether it is positive negative or zero.
+
+num = int(input("Enter a number: "))
+
+if (num > 0):
+    print("The number is positive.")
+elif (num == 0):
+    print("The number is zero.")
+else:
+    print("The number is negative.")
+    
+Homework 
+2) Write a Python program that takes in a number from the user and checks whether it is even or odd. 
+3)Write a Program to print your name 10 times.
+4)Write a Program to reverse your name using python.
+5)Write a program to print first 10 numbers in python
