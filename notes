@@ -53,3 +53,7 @@ else:
  6) What is Boolean in python?
  In Python, a boolean is a data type that can only have two values: True or False. Boolean values are often used in programming as a way of
  representing logical or binary conditions, where a statement is either true or false.
+ 
+
+Interpreter Translates program one statement at a time.
+Compiler Scans the entire program and translates it as a whole into machine code.
