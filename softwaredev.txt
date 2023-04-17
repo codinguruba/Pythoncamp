@@ -1,0 +1,32 @@
+What is Software development?
+
+-Software development is the process of creating, designing, implementing, and maintaining software applications, systems, and solutions. It involves
+using various programming languages, tools, and frameworks to develop software that meets the needs of users and organizations.
+
+What is Software Engineering?
+Software engineering is the application of engineering principles and practices to the development, design, testing, and maintenance of software. It involves using systematic, disciplined, and quantifiable approaches to software development to ensure that software is reliable, efficient, 
+and meets the needs of users and organizations.
+
+
+What is REST API?
+
+- REST (Representational State Transfer) API is an architectural style for building web services.
+REST API uses HTTP (Hypertext Transfer Protocol) to send and receive requests and responses.
+The resources in REST API are identified by URIs (Uniform Resource Identifiers). The HTTP methods (GET, POST, PUT, DELETE, etc.) are
+used to access and manipulate these resources. For example, a GET request to a URI would retrieve the resource associated with that URI,
+while a POST request would create a new resource.
+
+What is API?
+
+API stands for Application Programming Interface. It is a set of protocols, routines, and tools that enable different software
+applications to communicate with each other. 
+In other words, an API is a set of rules and protocols that defines
+how two or more software applications can interact with each other.
+
+APIs can be used to access data or services provided by other applications, or to share data or services provided by your own application with 
+other applications. 
+APIs can be used to perform a wide range of tasks, such as retrieving data from a database, sending email, processing payments, and more.
+
+Python APIs provide a convenient and easy-to-use way for developers to interact with different applications and services,
+making it a popular choice for building complex software systems.
+
