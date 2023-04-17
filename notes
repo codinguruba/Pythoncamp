@@ -79,5 +79,7 @@ else:
  In Python, a boolean is a data type that can only have two values: True or False. Boolean values are often used in programming as a way of
  representing logical or binary conditions, where a statement is either true or false.
  
-
+Tuple in Python
+Tuples are immutable sequences of elements, similar to lists, but once created, their contents cannot be modified.
+Tuples are created using parentheses ( ) and separating the elements with commas. For example: my_tuple = (1, 2, 3).
 
