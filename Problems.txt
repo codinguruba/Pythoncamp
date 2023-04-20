@@ -1,0 +1,9 @@
+// Defining variable in python
+name = "Ronaldo"
+age = 38
+country = "Portugal"
+club = "Manchester"
+print(name)
+print(age)
+print(country)
+print(club)
