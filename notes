@@ -83,3 +83,9 @@ Tuple in Python
 Tuples are immutable sequences of elements, similar to lists, but once created, their contents cannot be modified.
 Tuples are created using parentheses ( ) and separating the elements with commas. For example: my_tuple = (1, 2, 3).
 
+
+What is the difference between a list and a tuple in Python?
+In Python, both lists and tuples are used to store a collection of elements. However, there are several differences between them.
+
+Mutability: Lists are mutable, which means you can add, remove or modify elements after creating the list. Tuples, on the other hand, are immutable, which means you cannot change the elements once a tuple is created.
+
