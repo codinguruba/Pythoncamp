@@ -7,3 +7,9 @@ print(name)
 print(age)
 print(country)
 print(club)
+
+
+
+// Using random  in python
+import random
+print(random.randrange(1,10))
