@@ -20,3 +20,6 @@ print(random.randrange(1,10))
 b = float(2)
 print(b)
 print(type(b))
+
+//How to take input from user//
+a = int(input("Enter the value of a:"))
