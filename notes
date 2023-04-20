@@ -17,7 +17,9 @@ Compiler Scans the entire program and translates it as a whole into machine code
 -
 Python Data Types are used to define the type of a variable. It defines what type of data we are going to store in a variable.
 Example - str , int, float , bool , list etc.
-
+String - Ronaldo
+int - 12 , 11
+float - 3.4 , 3.5
 The type() function in Python can be used to determine the data type of a variable. 
 For example, type(x) will return <class 'int'> if x is an integer.
 
