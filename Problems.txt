@@ -13,3 +13,10 @@ print(club)
 // Using random  in python
 import random
 print(random.randrange(1,10))
+
+
+// Type conversion
+
+b = float(2)
+print(b)
+print(type(b))
