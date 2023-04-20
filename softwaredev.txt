@@ -7,6 +7,22 @@ What is Software Engineering?
 Software engineering is the application of engineering principles and practices to the development, design, testing, and maintenance of software. It involves using systematic, disciplined, and quantifiable approaches to software development to ensure that software is reliable, efficient, 
 and meets the needs of users and organizations.
 
+What is GET and POST?
+
+HTTP (Hypertext Transfer Protocol) is the foundation for communication between clients and servers in web-based applications. It supports various request methods for the client to interact with the server. Two of the most commonly used request methods in HTTP are GET and POST.
+
+GET and POST are two HTTP methods used to send data from a client (such as a web browser) to a server (such as a web application).
+
+GET requests data from a specified resource, and retrieves a representation of that resource. It is primarily used for retrieving data and does not modify the resource on the server. When you type a URL into your browser, the browser issues a GET request to the server to retrieve the resource located at that URL.
+
+POST, on the other hand, submits an entity to the specified resource, often causing a change in state or side effect on the server. It is typically used for submitting forms, uploading files, or sending data that needs to be processed by the server.
+
+In summary, GET is used for retrieving data from the server, while POST is used for sending data to the server to create or update resources.
+
+
+
+
+
 
 What is REST API?
 
