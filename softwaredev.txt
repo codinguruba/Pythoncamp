@@ -9,7 +9,8 @@ and meets the needs of users and organizations.
 
 What is GET and POST?
 
-HTTP (Hypertext Transfer Protocol) is the foundation for communication between clients and servers in web-based applications. It supports various request methods for the client to interact with the server. Two of the most commonly used request methods in HTTP are GET and POST.
+HTTP (Hypertext Transfer Protocol) is the foundation for communication between clients and servers in web-based applications.
+It supports various request methods for the client to interact with the server. Two of the most commonly used request methods in HTTP are GET and POST.
 
 GET and POST are two HTTP methods used to send data from a client (such as a web browser) to a server (such as a web application).
 
