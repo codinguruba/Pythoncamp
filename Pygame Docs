@@ -1,0 +1,31 @@
+Pygame is a python wrapper for SDL, written by Pete Shinners. What this means is that, using pygame, you can write games or other 
+multimedia applications in Python that will run unaltered 
+on any of SDL's supported platforms (Windows, Linux, Mac, and others).
+Pygame may be easy to learn, but the world of graphics programming can be pretty confusing to the newcomer.
+I wrote this to try to distill the practical knowledge I've gained over the past year or so of working with pygame, and its predecessor, PySDL.
+I've tried to rank these suggestions in order of importance, but how relevant any particular hint is will depend on 
+your own background and the details of your project.
+
+Quick start
+
+Welcome to pygame! Once you've got pygame installed (pip install pygame or pip3 install pygame for most people)
+
+
+What is a 2D game? 2D games are flat, sprite-based experiences that only allow you to move up, down, left,
+and/or right across the screen. 2D games don't have to be complicated. They work as well as they do because 2D games 
+lower the barrier for entry and are far easier to pick up and play than 3D games.
+
+Python can be used for 2D game programming, and there are several libraries and frameworks available that can make the process easier. Here are some popular options:
+
+Pygame: Pygame is a set of Python modules designed for writing video games. 
+It includes modules for graphics, sound, input, and more. Pygame is relatively easy to use and has good documentation.
+
+Some pygame syntax:
+
+pip install pygame
+
+Initializing Pygame:
+pygame.init()
+
+Creating a window
+window = pygame.display.set_mode((800, 600))
