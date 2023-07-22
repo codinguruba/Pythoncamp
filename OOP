@@ -1,0 +1,22 @@
+// Car example//
+class   Car:
+
+    def __init__(self,name,color,model,price):
+        self.name=name
+        self.color=color
+        self.model=model
+        self.price=price
+
+    def displayinfo(self):
+        print("Name:",self.name)
+        print("Color:",self.color)
+        print("model:",self.model)
+        print("price:",self.price)
+
+    def increaseprice(self,amount):
+        self.price=self.price+amount
+        print("New price :",self.price)
+
+c1=Car("maruti","black","suzuki",2000.00)
+c1.displayinfo()
+c1.increaseprice(20)
