@@ -20,3 +20,30 @@ class   Car:
 c1=Car("maruti","black","suzuki",2000.00)
 c1.displayinfo()
 c1.increaseprice(20)
+
+
+// Employee example
+
+class Employee:
+
+    def __init__(self,name,address,age):
+        self.name = name
+        self.address = address
+        self.age = age
+
+    def getName(self):
+        return self.name
+    
+    def getAddress(self):
+        return self.address
+    
+    def getAge(self):
+        return self.age
+    
+e1 = Employee("Araj","chabhil",20)
+print("Name:",e1.getName())
+print("Address:",e1.getAddress())
+print("Age:",e1.getAge())
+        
+
+   
