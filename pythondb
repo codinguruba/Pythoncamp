@@ -1,0 +1,18 @@
+#Here this code is used to enter name age and address in the database.
+import mysql.connector
+db = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "",
+    database = "School"
+)
+cursor = db.cursor()
+insert_query = "INSERT INTO Student(name,age,address) VALUES(%s,%s,%s)"
+name = input("Enter a name:")
+age = int(input("Enter a age:"))
+address = input("Enter address:")
+cursor.execute(insert_query,(name,age,address))
+db.commit()
+cursor.close()
+db.close()
+
