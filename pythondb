@@ -16,3 +16,22 @@ db.commit()
 cursor.close()
 db.close()
 
+import mysql.connector
+
+db = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "",
+    database = "Moco"
+)
+cursor = db.cursor()
+update_query = "UPDATE Employee SET name = 'puskar' WHERE id = 1"
+cursor.execute(update_query)
+db.commit()
+if(cursor.rowcount>0):
+    print("Successfully updated....")
+cursor.close()
+db.close()
+
+
+        
