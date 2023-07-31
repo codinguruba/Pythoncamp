@@ -22,7 +22,7 @@ db = mysql.connector.connect(
     host = "localhost",
     user = "root",
     password = "",
-    database = "Moco"
+    database = "Pogo"
 )
 cursor = db.cursor()
 update_query = "UPDATE Employee SET name = 'puskar' WHERE id = 1"
@@ -33,5 +33,51 @@ if(cursor.rowcount>0):
 cursor.close()
 db.close()
 
+
+
+import mysql.connector
+
+db = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "",
+    database = "Pogo"
+)
+cursor = db.cursor()
+
+def insert_employee():
+    insert_employee = "INSERT INTO Employee(id,name,age,address) VALUES(%s,%s,%s,%s)"
+    id = int(input("Enter id:"))
+    name = input("Enter name:")
+    age = int(input("Enter age:"))
+    address = input("Enter address:")
+    cursor.execute(insert_employee,(id,name,age,address))
+    db.commit()
+    if(cursor.rowcount>0):
+        print("Successfully entered data....")
+    cursor.close()
+    db.close()
+
+
+def update_employee():
+    update_employee = "UPDATE Employee SET name = 'kushal' WHERE id = 1"
+    cursor.execute(update_employee)
+    db.commit()
+    if(cursor.rowcount>0):
+        print("Successfull update.....")
+    cursor.close()
+    db.close()
+
+print("What you want to do?")
+print("1 to create")
+print("2 to update")
+choice = int(input("Enter your choice:"))
+if(choice == 1):
+    insert_employee()
+elif(choice ==2):
+    update_employee()
+else:
+    print("Invalid input")
+      
 
         
