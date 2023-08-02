@@ -1,0 +1,64 @@
+import mysql.connector
+
+db = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password = "",
+    database = "School"
+)
+cursor = db.cursor()
+
+def create_student():
+    insert_query = "INSERT INTO Student(name,age,address) VALUES('Ramesh',20,'Baluwatar')"
+    cursor.execute(insert_query)
+    db.commit()
+    if(cursor.rowcount>0):
+        print("Successfully created data")
+    cursor.close()
+    db.close()
+
+def get_details():
+    get_query = "SELECT * FROM Student"
+    cursor.execute(get_query)
+    student_data = cursor.fetchall()
+    for student in student_data:
+        print(student)
+    cursor.close()
+    db.close()
+
+def delete_student():
+    delete_query = "DELETE FROM Student WHERE name = 'Ramesh'"
+    cursor.execute(delete_query)
+    db.commit()
+    if(cursor.rowcount>0):
+        print("Successfully deleted data...")
+    cursor.close()
+    db.close()
+
+def update_student():
+    update_query = "UPDATE Student SET age = 18 WHERE name = 'Rakesh'"
+    cursor.execute(update_query)
+    db.commit()
+    if(cursor.rowcount>0):
+        print("Successfully update data....")
+    cursor.close()
+    db.close()
+
+print("1 for create")
+print("2 for read")
+print("3 for update")
+print("4 for delete")
+choice = int(input("Enter your choice:"))
+if(choice==1):
+    create_student()
+elif(choice==2):
+    get_details()
+elif(choice==3):
+    update_student()
+elif(choice==4):
+    delete_student()
+else:
+    print("Invalid input.....")
+
+
+    
