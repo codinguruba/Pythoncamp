@@ -29,3 +29,44 @@ pygame.init()
 
 Creating a window
 window = pygame.display.set_mode((800, 600))
+
+
+
+
+#Game
+import pygame
+pygame.init()
+running = True
+screen_width = 400
+screen_height = 400
+screen_color = (255,255,255)
+pos_x = 20
+pos_y = 20
+speed = 5
+window = pygame.display.set_mode((screen_width,screen_height))
+
+def draw():
+    window.fill(screen_color)
+    pygame.draw.rect(window,(255,255,0),(pos_x,pos_y,20,20))
+    pygame.display.update()
+
+#Game loop
+while running:
+    pygame.time.delay(50)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    key = pygame.key.get_pressed()
+    if key[pygame.K_UP]:
+        pos_y -= speed
+    if key[pygame.K_DOWN]:
+        pos_y += speed
+    if key[pygame.K_RIGHT]:
+        pos_x += speed
+    if key[pygame.K_LEFT]:
+        pos_x -= speed
+
+    draw()
+
+pygame.quit()
+
