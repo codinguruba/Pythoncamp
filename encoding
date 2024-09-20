@@ -73,4 +73,36 @@ def filter_junk(temps):
     return result
     
 
+
+def find_biggest_chill(temps):
+    biggest_chill = None  
+    
+    for i in range(1, len(temps)): 
+        if temps[i] < temps[i - 1]:  
+            chill_size = temps[i - 1] - temps[i]  
+            
+            if biggest_chill is None or chill_size > biggest_chill:
+                biggest_chill = chill_size
+    
+    return biggest_chill
+    
+
+
+def longest_heatwave(threshold, temps):
+    longest = 0 
+    cs= 0  
+    
+    for temp in temps:
+        if temp > threshold:
+            cs += 1 
+            
+        else:
+            longest = max(longest, cs) 
+            cs = 0  
+    
+    
+    longest = max(longest, cs)
+    
+    return longest
+    
     
