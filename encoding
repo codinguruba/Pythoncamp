@@ -64,5 +64,13 @@ def classify_temperatures(coldest, hottest, temps):
     return f"{colder_count} days were colder than {coldest}, {hotter_count} days were hotter than {hottest}, and {normal_count} days were normal.
 
 
+def filter_junk(temps):
+    
+    result = []
+    for a in temps:
+        if isinstance(a, (int, float)) and not isinstance(a, bool) and a != 0:
+            result.append(a)
+    return result
+    
 
     
