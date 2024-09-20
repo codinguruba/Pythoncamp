@@ -1,0 +1,32 @@
+
+
+def encode(s):
+
+    if type(s)!= str:
+        return None
+        
+    encoding_table = str.maketrans({
+        'i': '1', 'I': '1',
+        'e': '3', 'E': '3',
+        'a': '4', 'A': '4',
+        'o': '0', 'O': '0'
+    })
+
+    return s.translate(encoding_table)
+    
+    
+    
+def has_same_encoding(a, b):
+   
+    if  type(a) != str or type(b) != str:
+        return None
+        
+   
+    encoded_a = encode(a)
+    encoded_b = encode(b)
+
+    return encoded_a == encoded_b
+
+
+
+    
