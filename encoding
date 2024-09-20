@@ -28,5 +28,41 @@ def has_same_encoding(a, b):
     return encoded_a == encoded_b
 
 
+def count_daynight_pairs(temps):
+   
+    if len(temps) % 2 != 0:
+        return None
+
+    c = 0
+    
+    for i in range(0, len(temps), 2):
+        if temps[i] >= temps[i + 1]:
+            c += 1
+    
+    return c
+
+
+def classify_temperatures(coldest, hottest, temps):
+   
+    if coldest > hottest:
+        return f"Warning: {coldest} is greater than {hottest}."
+    
+ 
+    colder_count = 0
+    hotter_count = 0
+    normal_count = 0
+    
+    for temp in temps:
+        if temp < coldest:
+            colder_count += 1
+        elif temp > hottest:
+            hotter_count += 1
+        else:
+            normal_count += 1
+    
+
+    return f"{colder_count} days were colder than {coldest}, {hotter_count} days were hotter than {hottest}, and {normal_count} days were normal.
+
+
 
     
