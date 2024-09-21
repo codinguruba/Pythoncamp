@@ -86,7 +86,24 @@ def find_biggest_chill(temps):
                 biggest_chill = chill_size
     
     return biggest_chill
+
+
+def find_biggest_chill_ignoring_junk(temps):
+ 
+    filtered_data = [temp for temp in temps if isinstance(temp, (int, float)) and temp != 0]
     
+  
+    biggestChill = None
+    
+    for i in range(1, len(filtered_data)): 
+        if filtered_data[i] < filtered_data[i - 1]:   
+            chill_size = filtered_data[i - 1] - filtered_data[i]  
+            if biggest_chill is None or chill_size > biggest_chill:  
+                biggest_chill = chill_size
+    
+    return biggestChill
+    
+print(find_biggest_chill_ignoring_junk([100,0])) 
 
 
 def longest_heatwave(threshold, temps):
